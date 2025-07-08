@@ -432,8 +432,35 @@ const LayoutCategoryIndex = props => {
 /**
  * 标签列表
  */
+// const LayoutTagIndex = props => {
+//   return <></>
+// }
+/**
+ * 标签列表
+ */
 const LayoutTagIndex = props => {
-  return <></>
+  const { tagOptions } = props
+  const { locale } = useGlobal()
+
+  return (
+    <>
+      <div className='py-10'>
+        <div className='dark:text-gray-200 mb-5'>
+          <i className='mr-1 fas fa-tag' />
+          {locale.COMMON.TAGS}:
+        </div>
+        <div id='tags-list' className='duration-200 flex flex-wrap'>
+          {tagOptions?.map(tag => {
+            return (
+              <div key={tag.name} className='p-2'>
+                <TagItemMini key={tag.name} tag={tag} />
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </>
+  )
 }
 
 export {
