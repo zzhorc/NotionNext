@@ -2262,6 +2262,11 @@ dequal@^2.0.3, dequal@2.0.3:
   resolved "https://registry.npmmirror.com/dequal/-/dequal-2.0.3.tgz"
   integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
 
+destr@^2.0.3:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/destr/-/destr-2.0.5.tgz#7d112ff1b925fb8d2079fac5bdb4a90973b51fdb"
+  integrity sha512-ugFTXCtDZunbzasqBxrK93Ik/DRYsO6S/fedkWEMKqt04xZ4csmnmwGDBAb07QWNaGMAmnTIemsYZCksjATwsA==
+
 detect-libc@^2.0.0:
   version "2.1.2"
   resolved "https://registry.npmmirror.com/detect-libc/-/detect-libc-2.1.2.tgz"
@@ -3425,13 +3430,6 @@ internal-slot@^1.1.0:
     es-errors "^1.3.0"
     hasown "^2.0.2"
     side-channel "^1.1.0"
-
-invariant@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.npmmirror.com/invariant/-/invariant-2.2.4.tgz"
-  integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
-  dependencies:
-    loose-envify "^1.0.0"
 
 ioredis@^5.6.1:
   version "5.8.2"
@@ -4674,6 +4672,11 @@ node-addon-api@^7.0.0:
   resolved "https://registry.npmmirror.com/node-addon-api/-/node-addon-api-7.1.1.tgz"
   integrity sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==
 
+node-fetch-native@^1.6.4:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/node-fetch-native/-/node-fetch-native-1.6.7.tgz#9d09ca63066cc48423211ed4caf5d70075d76a71"
+  integrity sha512-g9yhqoedzIUm0nTnTqAQvueMPVOuIY16bqgAJJC8XOOubYFNwz6IER9qs0Gq2Xd0+CecCKFjtdDTMA4u4xG06Q==
+
 node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmmirror.com/node-int64/-/node-int64-0.4.0.tgz"
@@ -4854,6 +4857,15 @@ object.values@^1.1.6, object.values@^1.2.1:
     call-bound "^1.0.3"
     define-properties "^1.2.1"
     es-object-atoms "^1.0.0"
+
+ofetch@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/ofetch/-/ofetch-1.4.1.tgz#b6bf6b0d75ba616cef6519dd8b6385a8bae480ec"
+  integrity sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==
+  dependencies:
+    destr "^2.0.3"
+    node-fetch-native "^1.6.4"
+    ufo "^1.5.4"
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
@@ -5277,13 +5289,10 @@ react-image@^4.0.3:
   resolved "https://registry.npmmirror.com/react-image/-/react-image-4.1.0.tgz"
   integrity sha512-qwPNlelQe9Zy14K2pGWSwoL+vHsAwmJKS6gkotekDgRpcnRuzXNap00GfibD3eEPYu3WCPlyIUUNzcyHOrLHjw==
 
-react-intersection-observer@^6.1.0:
-  version "6.4.2"
-  resolved "https://registry.npmmirror.com/react-intersection-observer/-/react-intersection-observer-6.4.2.tgz"
-  integrity sha512-gL6YrkhniA0tIbyDbUterzBwKh61vHR520rsKULel5T37gG4YP07wnWI3WoqOcKK5bKAu0PZB2FHD7/OjawN+w==
-  dependencies:
-    "@babel/runtime" "^7.2.0"
-    invariant "^2.2.4"
+react-intersection-observer@^9.16.0:
+  version "9.16.0"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.16.0.tgz#7376d54edc47293300961010844d53b273ee0fb9"
+  integrity sha512-w9nJSEp+DrW9KmQmeWHQyfaP6b03v+TdXynaoA964Wxt7mdR3An11z4NNCQgL4gKSK7y1ver2Fq+JKH6CWEzUA==
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -5299,14 +5308,6 @@ react-is@^18.0.0:
   version "18.3.1"
   resolved "https://registry.npmmirror.com/react-is/-/react-is-18.3.1.tgz"
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
-
-react-lazy-images@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmmirror.com/react-lazy-images/-/react-lazy-images-1.1.0.tgz"
-  integrity sha512-h5DHFhkMJyh2qsDl3hXWu6d+On10FsgHtRJ+BH7xjgsFOvsqaii9CEwEESqPJrrAiHo1qrN1LgzrV8X3zctHKA==
-  dependencies:
-    react-intersection-observer "^6.1.0"
-    unionize "^2.1.2"
 
 react-lifecycles-compat@^3.0.0:
   version "3.0.4"
@@ -5331,14 +5332,15 @@ react-notion-x@7.4.2:
     "@fisch0920/medium-zoom" "^1.0.7"
     "@matejmazur/react-katex" "^3.1.3"
     katex "^0.16.21"
-    notion-types "7.4.2"
-    notion-utils "7.4.2"
+    notion-types "7.7.1"
+    notion-utils "7.7.1"
     prismjs "^1.30.0"
     react-fast-compare "^3.2.0"
     react-hotkeys-hook "^4.5.1"
     react-image "^4.0.3"
-    react-lazy-images "^1.1.0"
+    react-intersection-observer "^9.16.0"
     react-modal "^3.16.3"
+    unionize "^3.1.0"
   optionalDependencies:
     react-pdf "^9.2.1"
 
@@ -6309,6 +6311,11 @@ typescript@*, typescript@>=3.3.1, typescript@>=4.2.0, typescript@5.6.2:
   version "5.6.2"
   resolved "https://registry.npmmirror.com/typescript/-/typescript-5.6.2.tgz"
   integrity sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==
+
+ufo@^1.5.4:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.6.1.tgz#ac2db1d54614d1b22c1d603e3aef44a85d8f146b"
+  integrity sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==
 
 unbox-primitive@^1.1.0:
   version "1.1.0"
